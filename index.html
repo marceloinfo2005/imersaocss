@@ -1,25 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
+    <!--ajuste para deixar a tela responsiva-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcelo Teixeira</title>
     <link rel="stylesheet" href="css/estilos.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Press+Start+2P&family=Roboto:wght@100&family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6d6952c5be.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <nav class="menu">
-            <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Portfólio</a></li>
-                <li><a href="#">Contato</a></li>
+            <!--cotainer classe no CSS para ajuste das margens da-->
+            <ul class="container">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#portfolio">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
-        <h1 class="site-title"> Marcelo Teixeira</h1>
-        <h2 class="site-subtitle">jr. Frontend Developer</h2>
+        <div class="titulo">
+            <h1 class="site-title"> Marcelo Teixeira</h1>
+            <h2 class="site-subtitle">jr. Frontend Developer</h2>
+            <h2 class="site-subtitle">sr. email responder</h2>
+        </div>
     </header>
+    <!--id server para ancorar o item da página no menu-->
+    <section class="sobre container" id="sobre">
+        <h2>Sobre</h2>
+
+        <figure class="avatar">
+            <img src="./css/img/avatar.jpg" alt="Marcelo Teixeira">
+        </figure>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quidem atque architecto, odit doloremque consectetur vero! Aut fugit neque sequi id non rerum facilis incidunt explicabo. Officia beatae vitae laudantium!
+        </p>
+
+        <p>
+            Tenetur dicta rem ut aliquid quo eos non expedita impedit. Ipsa sapiente corrupti iusto eum similique voluptatum magni velit sit ab, vitae quas, perspiciatis excepturi, vel quaerat itaque dicta repudiandae?
+        </p>
+
+        <p>
+            Unde necessitatibus fugiat similique aperiam ipsa voluptatum ex commodi repellendus! Sequi libero accusantium facere quis, dolores voluptate itaque distinctio natus iure, quibusdam eaque. Laborum incidunt nesciunt facere aperiam quibusdam inventore.
+        </p>
+
+        <p>
+            Unde necessitatibus fugiat similique aperiam ipsa voluptatum ex commodi repellendus! Sequi libero accusantium facere quis, dolores voluptate itaque distinctio natus iure, quibusdam eaque. Laborum incidunt nesciunt facere aperiam quibusdam inventore.
+        </p>
+        <p>
+            Unde necessitatibus fugiat similique aperiam ipsa voluptatum ex commodi repellendus! Sequi libero accusantium facere quis, dolores voluptate itaque distinctio natus iure, quibusdam eaque. Laborum incidunt nesciunt facere aperiam quibusdam inventore.
+        </p>
+
+        <p>
+            Este site foi construído durante a
+            <a href="https://www.alura.com.br/imersao-css">Imersão CSS da Alura</a> 😻
+        </p>
+
+    </section>
+    <section class="portfolio" id="portfolio">
+        <h2>Projetos</h2>
+
+        <!--a tag <div> não tem semantica, apenas para layout-->
+        <!--ajuste para deixar as imagens no formato coluna, uma ao lado da outra-->
+
+        <div class="grid">
+            <!--classe flip-card usado para ajustar o efeito das imagens-->
+
+            <div class="flip-card">
+                <div class="card">
+                    <figure class="card-front">
+                        <img class="img-portfolio" src="css/img/livros.jpg" alt="Livros">
+                    </figure>
+                    <div class="card-back">
+                        <h3>Livros</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="card">
+                    <figure class="card-front">
+                        <img class="img-portfolio" src="css/img/bluepex.jpg" alt="BluePex">
+                    </figure>
+                    <div class="card-back">
+                        <h3>BluePex</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="card">
+                    <figure class="card-front">
+                        <img class="img-portfolio" src="css/img/catalogo_livros.jpg" alt="Catálago.Livros">
+                    </figure>
+                    <div class="card-back">
+                        <h3>Catálogo.Livros</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="card">
+                    <figure class="card-front">
+                        <img class="img-portfolio" src="css/img/projpessoais-creditos-hal-gatewood-unsplash.jpg" alt="Like a Boss">
+                    </figure>
+                    <div class="card-back">
+                        <h3>Like a Boss</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="card">
+                    <figure class="card-front">
+                        <img class="img-portfolio" src="css/img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="WebDesign">
+                    </figure>
+                    <div class="card-back">
+                        <h3>WebDesign</h3>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    <section class="contato container" id="contato">
+        <!--class uso para deixar referencia no css e ponto de ancora do menu-->
+        <h2>Contato</h2>
+
+        <div class="grid icons">
+            <a target="_blank" href="https://github.com/marceloinfo2005">
+                <i class="fab fa-github"></i>
+                <!--gerando os icones referente link selecionado-->
+            </a>
+            <a target="_blank" href="">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/marcelo-teixeira-1424154b">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:marcelo.teixeira@bluepex.com">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <div class="home">
+            <a href="index.html">
+                <i class="fas fa-home"></i>
+        </div>
+    </section>
 </body>
 
 </html>
